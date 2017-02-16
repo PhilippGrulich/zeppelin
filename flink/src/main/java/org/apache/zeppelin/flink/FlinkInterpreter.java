@@ -261,7 +261,7 @@ public class FlinkInterpreter extends Interpreter {
     }
     linesToRun[lines.length] = "print(\"\")";
 
-    System.setOut(new PrintStream(out));
+    System.setOut(new PrintStream(context.out));
     out.reset();
     Code r = null;
 
